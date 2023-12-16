@@ -4,7 +4,7 @@ import numpy as np
 class ReLU:
 
 	# Forward Pass Function
-	def forward(self, inputs, training):
+	def forward(self, inputs, training=False):
 
 		# Save inputs for Backpropagation
 		self.inputs = inputs
@@ -30,7 +30,7 @@ class ReLU:
 class Softmax:
 
 	# Forward Pass Function
-	def forward(self, inputs, training):
+	def forward(self, inputs, training=False):
 
 		# Calculate unnormalized probabilities
 		probabilities = np.exp(inputs - np.max(inputs, axis=1, keepdims=True))
@@ -61,7 +61,7 @@ class Softmax:
 class Sigmoid:
 
 	# Forward Pass Function
-	def forward(self, inputs, training):
+	def forward(self, inputs, training=False):
 
 		# Save input and calculate output
 		self.inputs = inputs
@@ -80,7 +80,7 @@ class Sigmoid:
 class Linear:
 
 	# Forward Pass
-	def forward(self, inputs, training):
+	def forward(self, inputs, training=False):
 
 		# Save values
 		self.inputs = inputs

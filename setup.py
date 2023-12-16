@@ -20,6 +20,6 @@ setup(
 		'Operating System :: OS Independent', 
 	], 
 	install_requires=['numpy>=1.24.1'], 
-	extras_require={'dev': ['pytest>=7.0', 'twine>=4.0.2'],}, 
+	extras_require={'dev': ['pytest>=7.0', 'pytest-cov>=4.1.0', 'twine>=4.0.2'],}, 
 	python_requires='>=3.10', 
 	)
